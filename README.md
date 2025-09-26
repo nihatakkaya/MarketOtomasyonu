@@ -69,8 +69,10 @@ Market Otomasyonu, küçük ve orta ölçekli marketler için geliştirilmiş ka
 <img width="1110" height="666" alt="image" src="https://github.com/user-attachments/assets/41b50c99-d441-44ae-a7b6-8642cb8fce46" />
 
 
+### 🎥 Demo Videosu
 
-### Demo Videosu
+[![Demo Videosu](https://img.youtube.com/vi/BmGkYrx88_4/0.jpg)](https://youtu.be/BmGkYrx88_4)
+
 
 
 
