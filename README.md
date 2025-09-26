@@ -66,7 +66,8 @@ Market Otomasyonu, küçük ve orta ölçekli marketler için geliştirilmiş ka
 
 ### Şifre Sıfırlama Paneli
 
-<img width="1110" height="666" alt="image" src="https://github.com/user-attachments/assets/41b50c99-d441-44ae-a7b6-8642cb8fce46" />
+<img width="629" height="313" alt="image" src="https://github.com/user-attachments/assets/95cb906e-bb0a-4cc2-9436-a651057d8bb8" />
+
 
 
 ### 🎥 Demo Videosu
