@@ -74,6 +74,8 @@ Market Otomasyonu, küçük ve orta ölçekli marketler için geliştirilmiş ka
 
 [![Demo Videosu](https://img.youtube.com/vi/BmGkYrx88_4/0.jpg)](https://youtu.be/BmGkYrx88_4)
 
+📽️ [YouTube Üzerinden İzlemek için Tıklayın](https://youtu.be/BmGkYrx88_4)
+
 
 
 
