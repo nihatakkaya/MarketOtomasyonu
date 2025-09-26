@@ -153,7 +153,119 @@ namespace MarketOtomasyonu.dao
                 return LoginStatus.basarisiz;
             }
         }
+        public Urun urunuGetir(string barkod)
+        {
+            con.Open();
+            cmd = new SqlCommand("select * from urun where barkodKod=@code", con);
+            cmd.Parameters.AddWithValue("@code", barkod);
+            dr = cmd.ExecuteReader();
+            Urun urun = new Urun();
+            while (dr.Read())
+            {
+                urun.id = dr["id"].ToString();
+                urun.qrkod = dr["qrkod"].ToString();
+                urun.barkodKod = dr["barkodKod"].ToString();
+                //urun.olusturmaTarih = DateTime.Parse(dr["olusturmaTarih"].ToString());
+                //urun.guncellemeTarih = DateTime.Parse(dr["guncellemeTarih"].ToString());
+                urun.UrunIsim = dr["UrunIsim"].ToString();
+                urun.kilo = int.Parse(dr["kilo"].ToString());
+                urun.fiyat = int.Parse(dr["fiyat"].ToString());
+                //urun.ciro = int.Parse(dr["ciro"].ToString());
+            }
+            con.Close();
+            return urun;
+        }
 
+
+        public List<User> tumKullanicilariGetir()
+        {
+            List<User> userList = new List<User>();
+            con.Open();
+            cmd = new SqlCommand("select * from loginTable", con);
+            dr = cmd.ExecuteReader();
+            while (dr.Read())
+            {
+                User user = new User();
+                user.id = int.Parse(dr["id"].ToString());
+                user.kullaniciAdi = dr["kullaniciAdi"].ToString();
+                user.sifre = dr["sifre"].ToString();
+                user.yetki = dr["yetki"].ToString();
+                user.yetki = dr["bolge"].ToString();
+                user.emailAdres = dr["emailAdres"].ToString();
+                user.guvenlikSorusu = dr["guvenlikSorusu"].ToString();
+                user.guvenlikCevabi = dr["guvenlikCevabi"].ToString();
+                userList.Add(user);
+            }
+            con.Close();
+            return userList;
+        }
+
+        public LoginStatus kullaniciEkle(User user)
+        {
+            con.Open();
+            cmd = new SqlCommand("sp_kullaniciEkle", con);
+            cmd.CommandType = System.Data.CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@kullaniciAdi", user.kullaniciAdi);
+            cmd.Parameters.AddWithValue("@sifre", user.sifre);
+            cmd.Parameters.AddWithValue("@yetki", user.yetki);
+            cmd.Parameters.AddWithValue("@bolge", user.bolge);
+            cmd.Parameters.AddWithValue("@emailAdres", user.emailAdres);
+            cmd.Parameters.AddWithValue("@guvenlikSorusu", user.guvenlikSorusu);
+            cmd.Parameters.AddWithValue("@guvenlikCevabi", user.guvenlikCevabi);
+            int returnvalue = cmd.ExecuteNonQuery();
+            con.Close();
+            if (returnvalue == 1)
+            {
+                return LoginStatus.basarili;
+            }
+            else
+            {
+                return LoginStatus.basarisiz;
+            }
+        }
+
+        public LoginStatus kullaniciSil(int id)
+        {
+            con.Open();
+            cmd = new SqlCommand("delete from loginTable where id=id", con);
+            cmd.Parameters.AddWithValue("@id", id);
+            int returnValue = cmd.ExecuteNonQuery();
+            con.Close();
+
+            if(returnValue == 1)
+            {
+                return LoginStatus.basarili;
+            }
+            else
+            {
+                return LoginStatus.basarisiz;
+            }
+        }
+
+        public List<Urun> tumUrunleriGetir()
+        {
+            List<Urun> urunList = new List<Urun>();
+            con.Open();
+            cmd = new SqlCommand("select * from urun", con);
+            dr = cmd.ExecuteReader();
+            while (dr.Read())
+            {
+                Urun urun = new Urun();
+                urun.id = dr["id"].ToString();
+                urun.qrkod = dr["qrkod"].ToString();
+                urun.barkodKod = dr["barkodKod"].ToString();
+                //urun.olusturmaTarih = DateTime.Parse(dr["olusturmaTarih"].ToString());
+                //urun.guncellemeTarih = DateTime.Parse(dr["guncellemeTarih"].ToString());
+                urun.UrunIsim = dr["UrunIsim"].ToString();
+                urun.kilo = int.Parse(dr["kilo"].ToString());
+                urun.fiyat = int.Parse(dr["fiyat"].ToString());
+                //urun.ciro = int.Parse(dr["ciro"].ToString());
+                urunList.Add(urun);
+            }
+
+            con.Close();
+            return urunList;
+        }
     }
 }
 

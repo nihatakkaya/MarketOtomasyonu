@@ -17,6 +17,9 @@ namespace MarketOtomasyonu
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
+            //Application.Run(new MeyveSebzePanel());
+            //Application.Run(new AdminPanel());
+            //Application.Run(new KasiyerPanel());
         }
     }
 }

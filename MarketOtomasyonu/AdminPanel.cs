@@ -16,5 +16,26 @@ namespace MarketOtomasyonu
         {
             InitializeComponent();
         }
+
+        private void btn_kullanici_Click(object sender, EventArgs e)
+        {
+            KullaniciPanel kullaniciPanel = new KullaniciPanel();
+            kullaniciPanel.Show();
+            this.Hide();
+        }
+
+        private void btn_urun_Click(object sender, EventArgs e)
+        {
+            UrunPanel urunPanel = new UrunPanel();
+            urunPanel.Show();
+            this.Hide();
+        }
+
+        private void btn_cikis_Click(object sender, EventArgs e)
+        {
+            Form1 form1 = new Form1();
+            form1.Show();
+            this.Hide();
+        }
     }
 }

@@ -47,9 +47,10 @@
             this.btn_et.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn_et.ImageKey = "et.ico";
             this.btn_et.ImageList = this.ımageList1;
-            this.btn_et.Location = new System.Drawing.Point(12, 36);
+            this.btn_et.Location = new System.Drawing.Point(16, 44);
+            this.btn_et.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_et.Name = "btn_et";
-            this.btn_et.Size = new System.Drawing.Size(188, 188);
+            this.btn_et.Size = new System.Drawing.Size(251, 231);
             this.btn_et.TabIndex = 0;
             this.btn_et.UseVisualStyleBackColor = true;
             // 
@@ -67,9 +68,10 @@
             this.btn_sut.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn_sut.ImageKey = "süt.ico";
             this.btn_sut.ImageList = this.ımageList1;
-            this.btn_sut.Location = new System.Drawing.Point(217, 36);
+            this.btn_sut.Location = new System.Drawing.Point(289, 44);
+            this.btn_sut.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_sut.Name = "btn_sut";
-            this.btn_sut.Size = new System.Drawing.Size(188, 188);
+            this.btn_sut.Size = new System.Drawing.Size(251, 231);
             this.btn_sut.TabIndex = 1;
             this.btn_sut.UseVisualStyleBackColor = true;
             // 
@@ -78,29 +80,33 @@
             this.btn_meyveAndSebze.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn_meyveAndSebze.ImageIndex = 0;
             this.btn_meyveAndSebze.ImageList = this.ımageList1;
-            this.btn_meyveAndSebze.Location = new System.Drawing.Point(217, 230);
+            this.btn_meyveAndSebze.Location = new System.Drawing.Point(289, 283);
+            this.btn_meyveAndSebze.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_meyveAndSebze.Name = "btn_meyveAndSebze";
-            this.btn_meyveAndSebze.Size = new System.Drawing.Size(188, 188);
+            this.btn_meyveAndSebze.Size = new System.Drawing.Size(251, 231);
             this.btn_meyveAndSebze.TabIndex = 3;
             this.btn_meyveAndSebze.UseVisualStyleBackColor = true;
+            this.btn_meyveAndSebze.Click += new System.EventHandler(this.btn_meyveAndSebze_Click);
             // 
             // btn_bakla
             // 
             this.btn_bakla.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn_bakla.ImageKey = "baklagil.ico";
             this.btn_bakla.ImageList = this.ımageList1;
-            this.btn_bakla.Location = new System.Drawing.Point(12, 230);
+            this.btn_bakla.Location = new System.Drawing.Point(16, 283);
+            this.btn_bakla.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_bakla.Name = "btn_bakla";
-            this.btn_bakla.Size = new System.Drawing.Size(188, 188);
+            this.btn_bakla.Size = new System.Drawing.Size(251, 231);
             this.btn_bakla.TabIndex = 2;
             this.btn_bakla.UseVisualStyleBackColor = true;
             // 
             // btn_cikisYap
             // 
             this.btn_cikisYap.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.btn_cikisYap.Location = new System.Drawing.Point(221, 430);
+            this.btn_cikisYap.Location = new System.Drawing.Point(295, 529);
+            this.btn_cikisYap.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_cikisYap.Name = "btn_cikisYap";
-            this.btn_cikisYap.Size = new System.Drawing.Size(188, 42);
+            this.btn_cikisYap.Size = new System.Drawing.Size(251, 52);
             this.btn_cikisYap.TabIndex = 4;
             this.btn_cikisYap.Text = "Çıkış Yap";
             this.btn_cikisYap.UseVisualStyleBackColor = false;
@@ -109,27 +115,30 @@
             // lbl_saat
             // 
             this.lbl_saat.AutoSize = true;
-            this.lbl_saat.Location = new System.Drawing.Point(337, 9);
+            this.lbl_saat.Location = new System.Drawing.Point(449, 11);
+            this.lbl_saat.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_saat.Name = "lbl_saat";
-            this.lbl_saat.Size = new System.Drawing.Size(27, 13);
+            this.lbl_saat.Size = new System.Drawing.Size(33, 16);
             this.lbl_saat.TabIndex = 5;
             this.lbl_saat.Text = "saat";
             // 
             // lbl_dakika
             // 
             this.lbl_dakika.AutoSize = true;
-            this.lbl_dakika.Location = new System.Drawing.Point(353, 9);
+            this.lbl_dakika.Location = new System.Drawing.Point(471, 11);
+            this.lbl_dakika.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_dakika.Name = "lbl_dakika";
-            this.lbl_dakika.Size = new System.Drawing.Size(39, 13);
+            this.lbl_dakika.Size = new System.Drawing.Size(48, 16);
             this.lbl_dakika.TabIndex = 5;
             this.lbl_dakika.Text = "dakika";
             // 
             // lbl_saniye
             // 
             this.lbl_saniye.AutoSize = true;
-            this.lbl_saniye.Location = new System.Drawing.Point(370, 9);
+            this.lbl_saniye.Location = new System.Drawing.Point(493, 11);
+            this.lbl_saniye.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_saniye.Name = "lbl_saniye";
-            this.lbl_saniye.Size = new System.Drawing.Size(37, 13);
+            this.lbl_saniye.Size = new System.Drawing.Size(47, 16);
             this.lbl_saniye.TabIndex = 5;
             this.lbl_saniye.Text = "saniye";
             this.lbl_saniye.Click += new System.EventHandler(this.label3_Click);
@@ -141,9 +150,9 @@
             // 
             // KasiyerPanel
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(421, 484);
+            this.ClientSize = new System.Drawing.Size(561, 596);
             this.Controls.Add(this.lbl_saniye);
             this.Controls.Add(this.lbl_dakika);
             this.Controls.Add(this.lbl_saat);
@@ -153,6 +162,7 @@
             this.Controls.Add(this.btn_sut);
             this.Controls.Add(this.btn_et);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "KasiyerPanel";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "KasiyerPanel";

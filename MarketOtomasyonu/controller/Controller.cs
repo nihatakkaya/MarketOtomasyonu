@@ -83,6 +83,60 @@ namespace MarketOtomasyonu.controller
                 return LoginStatus.eksikParametre;
             }
         }
+        public Urun urunuGetir(string barkod)
+        {
+            if (!string.IsNullOrEmpty(barkod))
+            {
+                Urun urun = repository.urunuGetir(barkod);
+                return urun;
+            }
+            else
+            {
+                return null;
+            }
+        }
 
+
+        public List<User> tumKullanicilariGetir()
+        {
+            Controller controller = new Controller();
+            return repository.tumKullanicilariGetir();
+
+        }
+
+        public LoginStatus kullaniciEkle(User user)
+        {
+            if (string.IsNullOrEmpty(user.kullaniciAdi) && !string.IsNullOrEmpty(user.sifre) && !string.IsNullOrEmpty(user.yetki)
+                && !string.IsNullOrEmpty(user.emailAdres) && !string.IsNullOrEmpty(user.guvenlikSorusu)
+                && !string.IsNullOrEmpty(user.guvenlikCevabi))
+            {
+                Controller controller = new Controller();
+                LoginStatus sonuc = repository.kullaniciEkle(user);
+                return sonuc;
+            }
+            else
+            {
+                return LoginStatus.eksikParametre;
+            }
+        }
+
+        public LoginStatus kullaniciSil(int id)
+        {
+            if (!string.IsNullOrEmpty(id.ToString()))
+            {
+                LoginStatus sonuc = repository.kullaniciSil(id);
+                return sonuc;
+            }
+            else
+            {
+                return LoginStatus.eksikParametre;
+            }
+
+        }
+
+        public List<Urun> tumUrunleriGetir()
+        {
+            return repository.tumUrunleriGetir();
+        }
     }
 }

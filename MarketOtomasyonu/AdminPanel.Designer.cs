@@ -28,33 +28,85 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminPanel));
+            this.btn_kullanici = new System.Windows.Forms.Button();
+            this.ımageList1 = new System.Windows.Forms.ImageList(this.components);
+            this.btn_urun = new System.Windows.Forms.Button();
+            this.btn_cikis = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // label1
+            // btn_kullanici
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(133, 76);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(73, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Admin Sayfası";
+            this.btn_kullanici.BackColor = System.Drawing.SystemColors.Control;
+            this.btn_kullanici.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_kullanici.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btn_kullanici.ImageIndex = 1;
+            this.btn_kullanici.ImageList = this.ımageList1;
+            this.btn_kullanici.Location = new System.Drawing.Point(12, 12);
+            this.btn_kullanici.Name = "btn_kullanici";
+            this.btn_kullanici.Size = new System.Drawing.Size(124, 119);
+            this.btn_kullanici.TabIndex = 0;
+            this.btn_kullanici.UseVisualStyleBackColor = false;
+            this.btn_kullanici.Click += new System.EventHandler(this.btn_kullanici_Click);
+            // 
+            // ımageList1
+            // 
+            this.ımageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("ımageList1.ImageStream")));
+            this.ımageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.ımageList1.Images.SetKeyName(0, "iconfinder_Shipping8_62597.ico");
+            this.ımageList1.Images.SetKeyName(1, "Hopstarter-Sleek-Xp-Basic-User-Group.ico");
+            this.ımageList1.Images.SetKeyName(2, "cikis.ico");
+            // 
+            // btn_urun
+            // 
+            this.btn_urun.BackColor = System.Drawing.SystemColors.Control;
+            this.btn_urun.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_urun.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btn_urun.ImageIndex = 0;
+            this.btn_urun.ImageList = this.ımageList1;
+            this.btn_urun.Location = new System.Drawing.Point(168, 12);
+            this.btn_urun.Name = "btn_urun";
+            this.btn_urun.Size = new System.Drawing.Size(124, 119);
+            this.btn_urun.TabIndex = 0;
+            this.btn_urun.UseVisualStyleBackColor = false;
+            this.btn_urun.Click += new System.EventHandler(this.btn_urun_Click);
+            // 
+            // btn_cikis
+            // 
+            this.btn_cikis.BackColor = System.Drawing.SystemColors.Control;
+            this.btn_cikis.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_cikis.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btn_cikis.ImageIndex = 2;
+            this.btn_cikis.ImageList = this.ımageList1;
+            this.btn_cikis.Location = new System.Drawing.Point(88, 147);
+            this.btn_cikis.Name = "btn_cikis";
+            this.btn_cikis.Size = new System.Drawing.Size(124, 119);
+            this.btn_cikis.TabIndex = 0;
+            this.btn_cikis.UseVisualStyleBackColor = false;
+            this.btn_cikis.Click += new System.EventHandler(this.btn_cikis_Click);
             // 
             // AdminPanel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.label1);
+            this.ClientSize = new System.Drawing.Size(306, 292);
+            this.Controls.Add(this.btn_urun);
+            this.Controls.Add(this.btn_cikis);
+            this.Controls.Add(this.btn_kullanici);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "AdminPanel";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AdminPaneli";
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btn_kullanici;
+        private System.Windows.Forms.ImageList ımageList1;
+        private System.Windows.Forms.Button btn_urun;
+        private System.Windows.Forms.Button btn_cikis;
     }
 }

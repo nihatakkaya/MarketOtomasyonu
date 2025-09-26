@@ -42,5 +42,11 @@ namespace MarketOtomasyonu
         {
             timer1.Start();
         }
+
+        private void btn_meyveAndSebze_Click(object sender, EventArgs e)
+        {
+            MeyveSebzePanel meyveSebzePanel = new MeyveSebzePanel();
+            meyveSebzePanel.ShowDialog();
+        }
     }
 }

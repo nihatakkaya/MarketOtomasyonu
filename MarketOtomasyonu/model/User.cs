@@ -12,6 +12,7 @@ namespace MarketOtomasyonu.model
         public int id { get; set; }
         public string kullaniciAdi { get; set; }
         public string sifre { get; set; }
+        public string bolge { get; set; }
         public string yetki { get; set; }
         public string emailAdres { get; set; }
         public string guvenlikSorusu { get; set; }
