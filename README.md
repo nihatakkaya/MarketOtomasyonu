@@ -36,23 +36,38 @@ Market Otomasyonu, küçük ve orta ölçekli marketler için geliştirilmiş ka
 
 ---
 
-## 📷 Ekran Görüntüleri ve Demo
+## 📷 Ekran Görüntüleri
 
-### Ekran Görüntüsü
+### Ekran Görüntüleri
 
-<img width="305" height="321" alt="image" src="https://github.com/user-attachments/assets/87d350ff-d653-47a0-b409-090494abdaed" />
+#### Giriş Sayfası
 
-<img width="443" height="212" alt="image" src="https://github.com/user-attachments/assets/3e834127-ecbd-4a07-b68a-20131fc00061" />
+<img width="443" height="212" alt="image" src="https://github.com/user-attachments/assets/bd91d7ab-bd0b-443c-8201-1e435490d9e2" />
 
-<img width="419" height="510" alt="image" src="https://github.com/user-attachments/assets/913bd2dc-67b1-43f4-8b0f-12933fdb0155" />
+#### Admin Paneli
 
-<img width="768" height="450" alt="image" src="https://github.com/user-attachments/assets/7a8d1c23-02db-44b7-b781-ce9788c68202" />
+<img width="305" height="321" alt="image" src="https://github.com/user-attachments/assets/3c89cf24-094e-4f96-abfa-cee0da8a29fe" />
 
-<img width="1110" height="666" alt="image" src="https://github.com/user-attachments/assets/1f5a54c5-3a68-44d2-b164-0502cfd392c4" />
+#### Kullanıcı Paneli
 
-<img width="629" height="313" alt="image" src="https://github.com/user-attachments/assets/7f2fa3ae-164e-471f-85f4-1b8f163ed522" />
+<img width="768" height="450" alt="image" src="https://github.com/user-attachments/assets/e510c67d-5e3c-4919-8dd5-e556a8451b54" />
 
-<img width="778" height="450" alt="image" src="https://github.com/user-attachments/assets/c989b55a-df6b-4187-bc3e-39cc47ce716c" />
+#### Ürün Paneli
+
+<img width="778" height="450" alt="image" src="https://github.com/user-attachments/assets/b8b9c779-ba1a-40ac-8a1c-4567bd9c64e7" />
+
+#### Kasiyer Paneli
+
+<img width="419" height="510" alt="image" src="https://github.com/user-attachments/assets/72e4831e-2cb2-431f-b7c5-e2493c2223bc" />
+
+#### Meyve Sebze Paneli
+
+<img width="1110" height="666" alt="image" src="https://github.com/user-attachments/assets/d9a1d14e-27e6-44ff-8054-3c95886e7e4c" />
+
+#### Şifre Sıfırlama Paneli
+
+<img width="1110" height="666" alt="image" src="https://github.com/user-attachments/assets/41b50c99-d441-44ae-a7b6-8642cb8fce46" />
+
 
 
 ### Demo Videosu
@@ -62,4 +77,3 @@ Market Otomasyonu, küçük ve orta ölçekli marketler için geliştirilmiş ka
 
 ---
 
-git clone https://github.com/kullaniciadi/market-otomasyonu.git
