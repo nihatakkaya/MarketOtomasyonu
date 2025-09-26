@@ -38,33 +38,33 @@ Market Otomasyonu, küçük ve orta ölçekli marketler için geliştirilmiş ka
 
 ## 📷 Ekran Görüntüleri
 
-### Ekran Görüntüleri
 
-#### Giriş Sayfası
+
+### Giriş Sayfası
 
 <img width="443" height="212" alt="image" src="https://github.com/user-attachments/assets/bd91d7ab-bd0b-443c-8201-1e435490d9e2" />
 
-#### Admin Paneli
+### Admin Paneli
 
 <img width="305" height="321" alt="image" src="https://github.com/user-attachments/assets/3c89cf24-094e-4f96-abfa-cee0da8a29fe" />
 
-#### Kullanıcı Paneli
+### Kullanıcı Paneli
 
 <img width="768" height="450" alt="image" src="https://github.com/user-attachments/assets/e510c67d-5e3c-4919-8dd5-e556a8451b54" />
 
-#### Ürün Paneli
+### Ürün Paneli
 
 <img width="778" height="450" alt="image" src="https://github.com/user-attachments/assets/b8b9c779-ba1a-40ac-8a1c-4567bd9c64e7" />
 
-#### Kasiyer Paneli
+### Kasiyer Paneli
 
 <img width="419" height="510" alt="image" src="https://github.com/user-attachments/assets/72e4831e-2cb2-431f-b7c5-e2493c2223bc" />
 
-#### Meyve Sebze Paneli
+### Meyve Sebze Paneli
 
 <img width="1110" height="666" alt="image" src="https://github.com/user-attachments/assets/d9a1d14e-27e6-44ff-8054-3c95886e7e4c" />
 
-#### Şifre Sıfırlama Paneli
+### Şifre Sıfırlama Paneli
 
 <img width="1110" height="666" alt="image" src="https://github.com/user-attachments/assets/41b50c99-d441-44ae-a7b6-8642cb8fce46" />
 
